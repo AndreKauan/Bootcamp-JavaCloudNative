@@ -13,9 +13,18 @@ public class ContaBancaria {
         saldo += depositoInicial+chequeEspecial;
     }
 
-    // Consultar Saldo
-    public double getSaldo() {
+    public double consultarSaldo() {
         return saldo;
     }
+
+    public double consultarChequeEspecial(){
+        return chequeEspecial;
+    }
+
+    public void depositar(double valor) {
+        this.saldo += valor;
+    }
+
+    
 
 }
