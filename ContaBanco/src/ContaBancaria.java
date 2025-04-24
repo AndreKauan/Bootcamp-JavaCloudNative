@@ -9,8 +9,7 @@ public class ContaBancaria {
         }else{
             chequeEspecial = depositoInicial * 0.5;
         }
-        
-        saldo += depositoInicial+chequeEspecial;
+        saldo = depositoInicial;
     }
 
     public double consultarSaldo() {
@@ -21,10 +20,22 @@ public class ContaBancaria {
         return chequeEspecial;
     }
 
+    public void sacar (double valorSaque){
+        if (saldo>valorSaque) {
+            saldo -= valorSaque;
+            System.out.println("Saque realizado com Sucesso!");
+        }else if (saldo+chequeEspecial>valorSaque){
+            System.out.println("Saque realizado com Sucesso! UTILIZADO CHEQUE ESPECIAL! ");
+            double restante = valorSaque-saldo;
+            saldo = 0;
+            chequeEspecial -= restante;
+        }else {System.out.println("Saque + Cheque Especial insuficiente");}
+    }
+
     public void depositar(double valor) {
         this.saldo += valor;
     }
 
-    
+
 
 }

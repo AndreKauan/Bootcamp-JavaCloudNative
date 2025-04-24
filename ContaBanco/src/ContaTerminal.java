@@ -8,11 +8,11 @@ public class ContaTerminal {
         
         ContaBancaria conta = new ContaBancaria(1000);
         System.out.println(conta.consultarSaldo());
-        conta.depositar(300);
+        //conta.depositar(300);
+        System.out.println(conta.consultarChequeEspecial());
+        conta.sacar(1800);
         System.out.println(conta.consultarSaldo());
         System.out.println(conta.consultarChequeEspecial());
-
-
 
         sc.close();
     }
