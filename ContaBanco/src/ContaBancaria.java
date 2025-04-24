@@ -32,6 +32,10 @@ public class ContaBancaria {
         }else {System.out.println("Saldo + Cheque Especial insuficiente");}
     }
 
+    public void pagarBoleto (double valorBoleto){
+        sacar(valorBoleto);
+    }
+
     public void depositar(double valor) {
         this.saldo += valor;
     }
