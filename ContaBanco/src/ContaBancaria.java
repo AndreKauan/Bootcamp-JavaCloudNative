@@ -29,7 +29,7 @@ public class ContaBancaria {
             double restante = valorSaque-saldo;
             saldo = 0;
             chequeEspecial -= restante;
-        }else {System.out.println("Saque + Cheque Especial insuficiente");}
+        }else {System.out.println("Saldo + Cheque Especial insuficiente");}
     }
 
     public void depositar(double valor) {
