@@ -10,7 +10,6 @@ public class ContaCorrente extends Conta {
 	}
 
     public void transferenciaPix(double valor, Conta contaDestino) {
-		this.sacar(valor);
-		contaDestino.depositar(valor);
+		transferir(valor, contaDestino);
 	}
 }
