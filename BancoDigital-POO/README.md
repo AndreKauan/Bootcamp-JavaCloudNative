@@ -1,18 +1,10 @@
-## Getting Started
+## Desafio Conta Bancária - `DIO` Bootcamp Java Cloud Native
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Link Desafio: [[https://github.com/digitalinnovationone/trilha-java-basico/tree/main/desafios/controle-fluxo](https://github.com/digitalinnovationone/exercicios-java-basico/blob/main/exercicios/3%20-%20Java%20e%20a%20Arte%20da%20Abstração%20com%20Classes%20e%20Encapsulamento.md)](https://github.com/falvojr/lab-banco-digital-oo)
 
-## Folder Structure
+Proposta: Evoluir o projeto criado. Sugestões: incluir novas classes, atributos e/ou métodos.
 
-The workspace contains two folders by default, where:
+- Criado validação nas funçoes de Sacar e Transferir;
+- Criado Transferência PIX, uso exclusivo do tipod e Conta Corrente;
+- Criado método para a Classe Banco listar as contas. Aonde a conta é adicionada automaticamente assim que for criada.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
