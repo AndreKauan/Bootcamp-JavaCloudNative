@@ -8,4 +8,9 @@ public class ContaCorrente extends Conta {
 		System.out.println("=== Infos Conta Corrente ===");
 		super.imprimirInfosComuns();
 	}
+
+    public void transferenciaPix(double valor, Conta contaDestino) {
+		this.sacar(valor);
+		contaDestino.depositar(valor);
+	}
 }

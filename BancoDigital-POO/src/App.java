@@ -3,11 +3,13 @@ public class App {
         Cliente andre = new Cliente();
 		andre.setNome("Andre Antonelli ");
 		
-		Conta cc = new ContaCorrente(andre);
+		ContaCorrente cc = new ContaCorrente(andre);
 		Conta cp = new ContaPoupanca(andre);
 
 		cc.depositar(100);
 		cc.transferir(100, cp);
+        cc.depositar(50);
+        cc.pix(10, cp);
 		
         cc.imprimirInfosComuns();
         cp.imprimirInfosComuns();
