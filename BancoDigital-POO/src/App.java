@@ -4,12 +4,12 @@ public class App {
 		andre.setNome("Andre Antonelli ");
 		
 		Conta cc = new ContaCorrente(andre);
-		Conta poupanca = new ContaPoupanca(andre);
+		Conta cp = new ContaPoupanca(andre);
 
 		cc.depositar(100);
-		cc.transferir(100, poupanca);
+		cc.transferir(100, cp);
 		
-		cc.infoConta();
-		poupanca.infoConta();
+        cc.imprimirInfosComuns();
+        cp.imprimirInfosComuns();
     }
 }

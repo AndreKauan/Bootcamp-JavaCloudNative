@@ -4,4 +4,8 @@ public class ContaCorrente extends Conta {
 		super(cliente);
 	}
 
+	public void imprimirInfosComuns() {
+		System.out.println("=== Infos Conta Corrente ===");
+		super.imprimirInfosComuns();
+	}
 }
