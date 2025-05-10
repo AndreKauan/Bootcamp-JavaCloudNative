@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Banco {
 
     private String instituicao;
-	private List<Conta> contas;
+	private List<Conta> contas = new ArrayList<>();
 
 	public String getInstituicao() {
 		return instituicao;
@@ -17,18 +18,19 @@ public class Banco {
 		return contas;
 	}
 
-	public void setContas(List<Conta> contas) {
-		this.contas = contas;
+	public void setConta(Conta conta) {
+		contas.add(conta);
 	}
 
     public void listarContas(){
-        if (!contas.isEmpty()){
-            for (Conta c : contas){
-                System.out.println("=== Lista de Contas ===");
-                c.imprimirInfosComuns();
-            }
-        }else {
+        if (contas == null || contas.isEmpty()){
             System.out.println("Não há contas!");
+        }else {
+            System.out.println("=== Lista de Contas ===");
+            for (Conta c : contas){
+                c.imprimirInfosComuns();
+                System.out.println("-------------------------");
+            }
         }
     }
 

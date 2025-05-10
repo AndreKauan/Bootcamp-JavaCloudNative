@@ -8,10 +8,11 @@ public abstract class Conta {
 	protected double saldo;
 	protected Cliente cliente;
 
-	public Conta(Cliente cliente) {
+	public Conta(Cliente cliente, Banco banco) {
 		this.agencia = Conta.AGENCIA_PADRAO;
 		this.numero = SEQUENCIAL++;
 		this.cliente = cliente;
+        banco.setConta(this);
 	}
 
 	public void sacar(double valor) {

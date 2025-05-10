@@ -8,8 +8,8 @@ public class App {
 
         bradesco.listarContas();
 		
-		ContaCorrente cc = new ContaCorrente(andre);
-		Conta cp = new ContaPoupanca(andre);
+		ContaCorrente cc = new ContaCorrente(andre, bradesco);
+		Conta cp = new ContaPoupanca(andre, bradesco);
 
         bradesco.listarContas();
 
