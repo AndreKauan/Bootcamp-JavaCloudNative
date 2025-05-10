@@ -7,9 +7,9 @@ public class App {
 		Conta cp = new ContaPoupanca(andre);
 
 		cc.depositar(100);
-		cc.transferir(100, cp);
-        cc.depositar(50);
-        cc.transferenciaPix(10, cp);
+		cc.transferir(110, cp);
+        //cc.depositar(50);
+        //cc.transferenciaPix(10, cp);
 		
         cc.imprimirInfosComuns();
         cp.imprimirInfosComuns();

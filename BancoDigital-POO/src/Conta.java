@@ -15,7 +15,11 @@ public abstract class Conta {
 	}
 
 	public void sacar(double valor) {
-		saldo -= valor;
+		if (saldo>=valor){
+            saldo -= valor;
+        }else {
+            System.out.println("Saldo insuficiente");
+        }
 	}
 
 	public void depositar(double valor) {
@@ -23,8 +27,13 @@ public abstract class Conta {
 	}
 
 	public void transferir(double valor, Conta contaDestino) {
-		this.sacar(valor);
-		contaDestino.depositar(valor);
+		if (saldo>=valor) {
+            this.sacar(valor);
+		    contaDestino.depositar(valor);   
+            System.out.println("Transferencia realizada com Sucesso!");
+        }else{
+            System.out.println("Saldo insuficiente");
+        }
 	}
 
 	public int getAgencia() {
