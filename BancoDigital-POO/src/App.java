@@ -9,7 +9,7 @@ public class App {
 		cc.depositar(100);
 		cc.transferir(100, cp);
         cc.depositar(50);
-        cc.pix(10, cp);
+        cc.transferenciaPix(10, cp);
 		
         cc.imprimirInfosComuns();
         cp.imprimirInfosComuns();
