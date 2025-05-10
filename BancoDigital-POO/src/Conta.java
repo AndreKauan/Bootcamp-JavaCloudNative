@@ -39,8 +39,7 @@ public class Conta {
 		return saldo;
 	}
 
-    @Override
-    public String toString() {
+    public String infoConta() {
         return "Conta [Cliente: " + this.cliente.getNome() + ", agencia: " + this.agencia + ", numero: " + numero + ", saldo: R$" + saldo + "]" ;
     }
 
