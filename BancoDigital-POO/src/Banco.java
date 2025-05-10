@@ -9,7 +9,7 @@ public class Banco {
 		return instituicao;
 	}
 
-	public void setNome(String instituicao) {
+	public void setinstituicao(String instituicao) {
 		this.instituicao = instituicao;
 	}
 
@@ -20,5 +20,16 @@ public class Banco {
 	public void setContas(List<Conta> contas) {
 		this.contas = contas;
 	}
+
+    public void listarContas(){
+        if (!contas.isEmpty()){
+            for (Conta c : contas){
+                System.out.println("=== Lista de Contas ===");
+                c.imprimirInfosComuns();
+            }
+        }else {
+            System.out.println("Não há contas!");
+        }
+    }
 
 }
